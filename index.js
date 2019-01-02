@@ -1,4 +1,4 @@
-const express = require("express"), app = express(), port = 80;
+const express = require("express"), app = express(), port = process.env.port || 80;
 var number = 0; //TODO: use a database so the number persists after the app stops
 
 app.get("/", (req, res) => {
